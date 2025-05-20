@@ -1,30 +1,51 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="bg-[#111827] min-h-screen">
+    <!-- Wrap components in Suspense to handle loading -->
+    <Suspense>
+      <template #default>
+        <!-- Wrap all Components inside a single root element -->
+        <div>
+        <NavBar/>
+        <HeroSection/>  
+        <ServicesSection/>
+        <AboutSection/>
+        <ExperienceAndSkills/>
+        <LatestProjSection/>
+        <TestimonialsSection/>
+        <ContactSection/>
+        <Footer />
+        <BackToTop/>
+        </div>
+    </template>
+    <template #fallback>
+      <div class="flex justify-center items-center min-h-screen">
+        <loadingSpinner/>
+      </div>
+    </template>
+    </Suspense>
+    
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<script setup>
+import { defineAsyncComponent } from 'vue';
+import loadingSpinner from './components/loadingSpinner.vue';
+//Import Components Asynchronously 
+const NavBar = defineAsyncComponent(() =>import('@/components/NavBar.vue'))
+const HeroSection = defineAsyncComponent(()=>import('@/components/HeroSection.vue'));
+const ServicesSection = defineAsyncComponent(()=>import('@/components/ServicesSection.vue'));
+const AboutSection = defineAsyncComponent(()=>import('@/components/AboutSection.vue'));
+const TestimonialsSection = defineAsyncComponent(()=>import('@/components/TestimonialsSection.vue'));
+const ExperienceAndSkills = defineAsyncComponent(()=>import('@/components/ExperienceAndSkills.vue'));
+const LatestProjSection = defineAsyncComponent(()=>import('@/components/LatestProjSection.vue'));
+const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'));
+const Footer = defineAsyncComponent(()=>import('@/components/Footer.vue'));
+const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'));
+</script>
+
+<style>
+*{
+  scrollbar-width: thin;
+  scrollbar-color: #111827 #f1f1f1;
 }
 </style>
