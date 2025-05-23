@@ -39,7 +39,7 @@
                                     </svg>
                                     <div class="download-loader tesxt-white hidden"></div>
                                 </div>
-                                <a href="/resume.pdf" download="resume.pdf" class="pl-2 text-primary">Download Resume</a>
+                                <a href="/sharpcodelabs/resume.pdf" download="Youssef_Resume.pdf" class="pl-2 text-primary">Download Resume</a>
                             </div>
                         </button>
                     </div>
@@ -61,4 +61,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
+function tezst(){
+    console.log(import.meta.url.BASE_URL);
+}
 </script>

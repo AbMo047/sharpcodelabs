@@ -28,39 +28,39 @@ import {ref} from 'vue';
 const services = ref([
     {
         id:1,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        name:'WEB DEVELOPMENT',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        icon:'https://img.icons8.com/?size=100&id=H2EORRzDw6Km&format=png&color=FFFFFF',
+        name:'SaaS Companies',
+        description:'I build scalable, component-based frontends and integrate powerful APIs to support your SaaS growth.'
     },
     {
         id:2,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        name:'Technical Writing',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        icon:'https://img.icons8.com/?size=100&id=k1xXzD3NEvLF&format=png&color=FFFFFF',
+        name:'Documentation & Developer Guides',
+        description:'Clear, structured documentation that makes your product easier to adopt - for users and developers alike.'
     },
     {
         id:3,
         icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        name:'Mobile Development',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        name:'Progressive Web & Mobile Apps',
+        description:'Fast-loading, cross-platform apps that feel native and work seamlessly on all devices.'
     },
     {
         id:4,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        name:'WEB DEVELOPMENT',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        icon:'./src/assets/image/ecommerce.png',
+        name:'Online Entrepeneurs',
+        description:'Custom booking systems, payment flows, and funnels designed to help you sell, convert and automate.'
     },
     {
         id:5,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        name:'WEB DEVELOPMENT',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        icon:'./src/assets/image/localbusiness.png',
+        name:'Local Businesses',
+        description:'Smart client portals and internal tools that save you time and simplify your workflow.'
     },
     {
         id:6,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        name:'WEB DEVELOPMENT',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        icon:'https://img.icons8.com/?size=100&id=999&format=png&color=FFFFFF',
+        name:'Startups',
+        description:'I help you launch fast with reliable MVPs - built to validate, iterate and scale with confidence.'
     }
 ])
 </script>
