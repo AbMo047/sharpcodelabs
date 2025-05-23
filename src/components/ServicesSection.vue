@@ -41,7 +41,7 @@ const services = ref([
     {
         id:3,
         icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        name:'WEB DEVELOPMENT',
+        name:'Mobile Development',
         description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
     },
     {

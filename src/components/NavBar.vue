@@ -1,6 +1,6 @@
 <template>
   <header class="flex justify-between p-3 items-center bg-opacity-50 relative z-20">
-<img src="../assets/image/logowhitetransparant.png" class="w-42" alt="Logo" />
+  <img src="../assets/image/logowhitetransparant.png" class="w-42" alt="Logo" />
     <!--Mobile toggle-->
     <div class="md:hidden z-30">
     <button type="button" 

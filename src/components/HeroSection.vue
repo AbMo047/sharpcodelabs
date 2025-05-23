@@ -15,15 +15,15 @@
                         </h1>
                     </div>
                     <p class="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Iste incidunt aliquid distinctio accusantium dolor nobis 
-                        excepturi veritatis commodi at optio sit vero autem, 
-                        magnam nemo perspiciatis fuga pariatur nam accusamus.
+                       My name is Youssef, I’m 26 years old and an IT developer with a deep passion for building things that actually work. 
+                       What started as curiosity for how digital systems operate quickly turned into a drive to create real solutions through clean, functional code. 
+                       I love the technical challenge — but even more, I love seeing an idea come to life and make an impact. 
+                       For me, every line of code is a step closer to a smoother, smarter, more efficient experience.
                     </p>
                     <div class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
                         <button class="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
                             <span class="absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary border-2 border-transparent"></span>
-                            <span class="relative flex items-center justify-center text-white">Hire Me</span>
+                            <span class="relative flex items-center justify-center text-white"><a href="#contact">Hire Me</a></span>
                         </button>
                         <button class="border border-primary px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
                             <div class="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">
