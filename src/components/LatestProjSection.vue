@@ -94,7 +94,7 @@ const Projects = ref([
     category: 'Testing Automation',
     image: '/sharpcodelabs/image/project2.png',
     title: 'Park & Seat Test Automation',
-    description: 'Automated seat selection tests with Cypress to streamline release cycles, improve test coverage, and ensure stable performance across deployments.',
+    description: 'Automated Cypress tests for seat selection to streamline releases, boost coverage, and ensure consistent, stable performance across updates.',
     technologies: ['Cypress', 'JavaScript']
   },
   {
