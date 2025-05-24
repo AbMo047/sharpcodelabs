@@ -3,13 +3,10 @@
         <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">Let's Connect</h2>
         <div class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8" data-aos="zoom-in-up">
             <div>
-                <p class="text-[#adb7be]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Facere quam consectetur illo at odit ab labore, accusantium facilis mollitia, dolorem, 
-                    perspiciatis aut iure ex est quod sunt molestias non tempora! 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quia inventore consectetur aspernatur molestias maxime quasi recusandae, 
-                    nihil nesciunt autem explicabo! Quia possimus laborum tenetur sapiente maiores porro, 
-                    nihil quis harum?
+                <p class="text-[#adb7be]">
+                    Whether you have a project in mind, a question about my work, or just want to say hello — I'm always open to connecting. 
+                    I specialize in building scalable, modern web and mobile applications with a strong focus on performance and user experience. 
+                    Let's build something great together.
                 </p>
                 <div class="col-lg-4 col-md-4 mb-lg-0 mt-5">
                     <div class="flex mb-10 items-center">
