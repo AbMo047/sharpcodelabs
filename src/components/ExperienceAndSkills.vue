@@ -29,7 +29,7 @@
                     <div v-for="element in Experiences" :key="element.id"
                     class="flex items-center rounded-xl p-4 bg-[#111a3e] shadow-lg border-[#1f1641]">
                     <div class="w-1/4">
-                        <img src="https://img.icons8.com/ios-filled/100/ffffff/laywer.png" alt="">
+                        <img src="https://img.icons8.com/ios-filled/100/ffffff/lawyer.png" alt="">
                     </div>
                     <div class="w-3/4 p1-4">
                         <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
@@ -47,47 +47,49 @@
 
 <script setup>
 import { ref } from 'vue'
-const Skills =ref([
-    {
-        id:1,
-        name:'HTML & CSS',
-        width:'85%'
-    },
-    {
-        id:2,
-        name:'Pyhton',
-        width:'30%'
-    },
-    {
-        id:3,
-        name:'JavaScript',
-        width:'60%'
-    },
-    {
-        id:4,
-        name:'VueJS',
-        width:'75%'
-    },
+const Skills = ref([
+  {
+    id: 1,
+    name: 'Vue.js (with Tailwind & GraphQL)',
+    width: '85%' // Gebaseerd op meerdere projecten (Booking System, DAMS, IIIF)
+  },
+  {
+    id: 2,
+    name: 'Node.js (incl. Keycloak, Docker)',
+    width: '80%' // Full-stack werk in Booking System & Government Portaal
+  },
+  {
+    id: 3,
+    name: 'JavaScript / TypeScript',
+    width: '75%' // Overkoepelend in vrijwel alle projecten
+  },
+  {
+    id: 4,
+    name: 'Cypress (E2E Testing)',
+    width: '65%' // Park & Seat Automation Project
+  }
 ]);
 
+
 const Experiences = ref([
-    {
-        id:1,
-        role:'Software Engineer',
-        company:'Microsoft',
-        date:'Mar 2023 - September 2024'
-    },
-    {
-        id:2,
-        role:'Frontend Developer',
-        company:'Spotify',
-        date:'Mar 2022 - September 2023'
-    },
-    {
-        id:3,
-        role:'FullStack Developer',
-        company:'SharpCode Labs',
-        date:'Mar-2021 - February 2019'
-    }
-])
+  {
+    id: 1,
+    role: 'Full Stack Developer',
+    company: 'Self-employed – SharpCode Labs',
+    date: 'Nov 2024 – Present'
+  },
+  {
+    id: 2,
+    role: 'Full Stack Developer',
+    company: 'Inuits, Antwerpen',
+    date: 'Feb 2023 – Sep 2024'
+  },
+  {
+    id: 3,
+    role: 'Technical Support Engineer',
+    company: 'Beego, Antwerpen',
+    date: 'Mar 2021 – Mar 2022'
+  }
+]);
+
 </script>

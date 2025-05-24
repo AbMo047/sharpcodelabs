@@ -33,7 +33,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Phone </h4>
-                            <p>+xxxxxxxxx</p>
+                            <p><a href="tel:+32470845712">+324 70 84 57 12</a></p>
                         </div>
                     </div>
                     <div class="flex mb-10 items-center">
@@ -45,7 +45,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>LinkedIn </h4>
-                            <p>www.linkedin.com</p>
+                            <a href="https://www.linkedin.com/in/youssefjhr/">Youssef J</a>
                         </div>
                     </div>
                 </div>

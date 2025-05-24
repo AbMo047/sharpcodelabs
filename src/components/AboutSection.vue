@@ -27,18 +27,18 @@
                     <span class="text-transparant bg-clip-text bg-gradient-to-r from-primary to-secondary">About</span>
                     Me
                 </h2>
-                <p class="text-base lg:text-lg mt-8 py-8"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Recusandae, illum obcaecati consequuntur, 
-                    officiis perspiciatis dolorum necessitatibus reiciendis aut nisi sit minus quos iste nesciunt. 
-                    Ducimus recusandae consequatur optio maxime dolorum.
+                <p class="text-base lg:text-lg mt-8 py-8">  
+                    Creative problem-solver. Clean code enthusiast. 
+                    I'm Youssef, a developer driven by challenge and simplicity. 
+                    Whether it's a booking system or a mobile app, I turn complex ideas into seamless digital experiences that work.
                 </p>
                 <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+200</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+2</h3>
                         <p class="text-sm sm:text-base text-gray-300">Happy Client</p>
                     </div>
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+300</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+10</h3>
                         <p class="text-sm sm:text-base text-gray-300">Project</p>
                 </div>
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
@@ -52,18 +52,13 @@
 </template>
 <script setup>
 import { ref } from 'vue';
-const education=ref([
-    {
-        id:1,
-        School:'school 1',
-        program:'Software Engineer',
-        year:'2022'
-    },
-    {
-        id:2,
-        School:'school 2',
-        program:'Software Engineer',
-        year:'2020'
-    }
-])
+const education = ref([
+  {
+    id: 1,
+    School: 'AP Hogeschool, Antwerpen',
+    program: 'Graduate Programming',
+    year: '2021 – 2023'
+  },  
+]);
+
 </script>

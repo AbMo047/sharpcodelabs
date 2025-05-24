@@ -64,57 +64,58 @@
 
 import { computed, ref } from 'vue';
 
-
 const Projects = ref([
-    {
-        id: 1,
-        category: 'web development',
-        image: 'src/assets/image/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae officia vitae doloremque et quis earum! Molestias quis facilis nulla tenetur illum? Error soluta obcaecati quibusdam quas laudantium, corrupti odio',
-        technologies: ['vue.js 3', 'vuex', 'express']
-    },
-    {
-        id: 2,
-        category: 'Mobile App',
-        image: 'src/assets/image/project2.png',
-        title: 'project 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae officia vitae doloremque et quis earum! Molestias quis facilis nulla tenetur illum? Error soluta obcaecati quibusdam quas laudantium, corrupti odio',
-        technologies: ['React native', 'express']
-    },
-    {
-        id: 3,
-        category: 'web development',
-        image: 'src/assets/image/project.png',
-        title: 'project 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae officia vitae doloremque et quis earum! Molestias quis facilis nulla tenetur illum? Error soluta obcaecati quibusdam quas laudantium, corrupti odio',
-        technologies: ['vue.js 3', 'vuex', 'express']
-    },
-    {
-        id: 4,
-        category: 'web development',
-        image: 'src/assets/image/project2.png',
-        title: 'project 4',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae officia vitae doloremque et quis earum! Molestias quis facilis nulla tenetur illum? Error soluta obcaecati quibusdam quas laudantium, corrupti odio',
-        technologies: ['vue.js 3', 'vuex', 'express']
-    },
-    {
-        id: 5,
-        category: 'web development',
-        image: 'src/assets/image/project.png',
-        title: 'project 5',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae officia vitae doloremque et quis earum! Molestias quis facilis nulla tenetur illum? Error soluta obcaecati quibusdam quas laudantium, corrupti odio',
-        technologies: ['vue.js 3', 'vuex', 'express']
-    },
-    {
-        id: 6,
-        category: 'web development',
-        image: 'src/assets/image/project2.png',
-        title: 'project 6',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae officia vitae doloremque et quis earum! Molestias quis facilis nulla tenetur illum? Error soluta obcaecati quibusdam quas laudantium, corrupti odio',
-        technologies: ['vue.js 3', 'vuex', 'express']
-    }
-])
+  {
+    id: 1,
+    category: 'Web Development',
+    image: '/sharpcodelabs/image/project.png',
+    title: 'Booking Management System',
+    description: 'Developed a full-featured booking platform with secure login, admin dashboard, and real-time reservation flow for services like saunas and wedding decorators.',
+    technologies: ['Vue.js', 'Node.js', 'MySQL', 'Keycloak', 'Docker']
+  },
+  {
+    id: 2,
+    category: 'Web Development',
+    image: '/sharpcodelabs/image/project.png',
+    title: 'Digital Asset Management System (DAMS)',
+    description: 'Created a media asset platform using Vue.js and GraphQL, allowing enterprise users to upload, tag, and retrieve digital files quickly and efficiently.',
+    technologies: ['Vue.js', 'GraphQL', 'Tailwind CSS']
+  },
+  {
+    id: 3,
+    category: 'Government Platform',
+    image: '/sharpcodelabs/image/project.png',
+    title: 'Agency for Home Affairs Portal',
+    description: 'Built a decentralized portal where municipalities can manage local data securely and autonomously, reducing administrative complexity and delay.',
+    technologies: ['Ember.js', 'Node.js']
+  },
+  {
+    id: 4,
+    category: 'Testing Automation',
+    image: '/sharpcodelabs/image/project2.png',
+    title: 'Park & Seat Test Automation',
+    description: 'Automated seat selection tests with Cypress to streamline release cycles, improve test coverage, and ensure stable performance across deployments.',
+    technologies: ['Cypress', 'JavaScript']
+  },
+  {
+    id: 5,
+    category: 'Prototype / Research',
+    image: '/sharpcodelabs/image/project.png',
+    title: 'IIIF Annotation Tool (PoC)',
+    description: 'Built a research prototype using Vue.js and IIIF to enable users to annotate images interactively and tag specific regions within digital archives.',
+    technologies: ['Vue.js', 'IIIF', 'JavaScript']
+  },
+  {
+    id: 6,
+    category: 'Mobile App',
+    image: '/sharpcodelabs/image/project2.png',
+    title: 'Client Booking App',
+    description: 'Designed a mobile app for clients to browse, book, and manage appointments, with a smooth and intuitive interface for responsive on-the-go usage.',
+    technologies: ['React Native', 'Express.js']
+  }
+]);
+
+
 
 const selectedCategory = ref('all');
 const filteredProjects = computed(() => {

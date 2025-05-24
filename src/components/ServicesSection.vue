@@ -46,13 +46,13 @@ const services = ref([
     },
     {
         id:4,
-        icon:'./src/assets/image/ecommerce.png',
+        icon:'/sharpcodelabs/image/ecommerce.png',
         name:'Online Entrepeneurs',
         description:'Custom booking systems, payment flows, and funnels designed to help you sell, convert and automate.'
     },
     {
         id:5,
-        icon:'./src/assets/image/localbusiness.png',
+        icon:'/sharpcodelabs/image/localbusiness.png',
         name:'Local Businesses',
         description:'Smart client portals and internal tools that save you time and simplify your workflow.'
     },
