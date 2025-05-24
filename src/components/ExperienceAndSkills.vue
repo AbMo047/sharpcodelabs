@@ -29,7 +29,7 @@
                     <div v-for="element in Experiences" :key="element.id"
                     class="flex items-center rounded-xl p-4 bg-[#111a3e] shadow-lg border-[#1f1641]">
                     <div class="w-1/4">
-                        <img src="https://img.icons8.com/ios-filled/100/ffffff/lawyer.png" alt="">
+                        <img src="https://img.icons8.com/ios-filled/100/ffffff/lawyer.png" alt="lawyer picture" class="pr-3">
                     </div>
                     <div class="w-3/4 p1-4">
                         <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">

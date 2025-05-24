@@ -53,43 +53,44 @@ const breakpoints =ref({
 });
 
 const testimonials = ref([
-    {
-        id:1,
-        fullName:'client 1',
-        image:"src/assets/image/top_picture.jpg",
-        comment:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente fugit ut fugiat voluptas necessitatibus sunt iusto vitae? Nesciunt natus ab nostrum voluptas officiis hic pariatur eos sequi temporibus. Cupiditate, dolore.',
-    },
-    {
-        id:2,
-        fullName:'client 2',
-        image:"src/assets/image/top_picture.jpg",
-        comment:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente fugit ut fugiat voluptas necessitatibus sunt iusto vitae? Nesciunt natus ab nostrum voluptas officiis hic pariatur eos sequi temporibus. Cupiditate, dolore.',
-    },
-    {
-        id:3,
-        fullName:'client 3',
-        image:"src/assets/image/top_picture.jpg",
-        comment:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente fugit ut fugiat voluptas necessitatibus sunt iusto vitae? Nesciunt natus ab nostrum voluptas officiis hic pariatur eos sequi temporibus. Cupiditate, dolore.',
-    },
-    {
-        id:4,
-        fullName:'client 4',
-        image:"src/assets/image/top_picture.jpg",
-        comment:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente fugit ut fugiat voluptas necessitatibus sunt iusto vitae? Nesciunt natus ab nostrum voluptas officiis hic pariatur eos sequi temporibus. Cupiditate, dolore.',
-    },
-    {
-        id:5,
-        fullName:'client 5',
-        image:"src/assets/image/top_picture.jpg",
-        comment:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente fugit ut fugiat voluptas necessitatibus sunt iusto vitae? Nesciunt natus ab nostrum voluptas officiis hic pariatur eos sequi temporibus. Cupiditate, dolore.',
-    },
-    {
-        id:6,
-        fullName:'client 6',
-        image:"src/assets/image/top_picture.jpg",
-        comment:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente fugit ut fugiat voluptas necessitatibus sunt iusto vitae? Nesciunt natus ab nostrum voluptas officiis hic pariatur eos sequi temporibus. Cupiditate, dolore.',
-    },
-])
+  {
+    id: 1,
+    fullName: 'Mohamed El M..',
+    image: "/sharpcodelabs/image/profilepic.jpg",
+    comment: "Youssef delivered exactly what I needed — a fast, responsive, and modern web app. Communication was smooth and the quality of code exceeded expectations!"
+  },
+  {
+    id: 2,
+    fullName: 'Jarno C.',
+    image: "/sharpcodelabs/image/profilepic.jpg",
+    comment: "Super impressed with the way he handled our project. From planning to delivery, everything was on point. Highly recommended for any serious development work."
+  },
+  {
+    id: 3,
+    fullName: 'Ricardo A.',
+    image: "/sharpcodelabs/image/profilepic.jpg",
+    comment: "Not only did he build a stunning mobile interface, but he also optimized the performance beyond what we expected. Our users love the new version!"
+  },
+  {
+    id: 4,
+    fullName: 'Omar Y.',
+    image: "/sharpcodelabs/image/profilepic.jpg",
+    comment: "Reliable, fast, and very skilled. Youssef took care of both frontend and backend flawlessly. We’ll definitely work with him again."
+  },
+  {
+    id: 5,
+    fullName: 'Yassine Y.',
+    image: "/sharpcodelabs/image/profilepic.jpg",
+    comment: "The automation testing setup he built saved us hours of manual QA. Clean structure, great documentation, and helpful support throughout."
+  },
+  {
+    id: 6,
+    fullName: 'Oussama E.',
+    image: "/sharpcodelabs/image/profilepic.jpg",
+    comment: "From start to finish, it was a professional experience. His understanding of full-stack development is impressive and it shows in the final result."
+  }
+]);
+
 </script>
 
 <style scoped>
