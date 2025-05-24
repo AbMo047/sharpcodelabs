@@ -58,7 +58,13 @@ const education = ref([
     School: 'AP Hogeschool, Antwerpen',
     program: 'Graduate Programming',
     year: '2021 – 2023'
-  },  
+  },
+  {
+    id: 2,
+    School: 'AP Hogeschool, Antwerpen',
+    program: 'Elektronica-ICT',
+    year: '2017-2021'
+  }
 ]);
 
 </script>
