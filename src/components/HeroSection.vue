@@ -61,7 +61,4 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
-function tezst(){
-    console.log(import.meta.url.BASE_URL);
-}
 </script>

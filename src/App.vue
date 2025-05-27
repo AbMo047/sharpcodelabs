@@ -17,11 +17,11 @@
         <BackToTop/>
         </div>
     </template>
-    <template #fallback>
+    <!-- <template #fallback>
       <div class="flex justify-center items-center min-h-screen">
         <loadingSpinner/>
       </div>
-    </template>
+    </template> -->
     </Suspense>
     
   </div>

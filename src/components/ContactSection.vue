@@ -50,7 +50,8 @@
             <div
             style="background: #111a3e; width: 100%;height: 100%; border-radius: 20px;
             overflow: hidden; border: 1px solid #111a3e;backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);">
-            <form class="flex flex-col p-2" data-aos="zoom-in-up">
+            <div v-if="successMessage" class="mb-4 bg-green-600 text-white px-4 py-2 rounded text-sm">Message sent successfully</div>
+            <form ref="form" @submit.prevent="sendEmail" class="flex flex-col p-2" data-aos="zoom-in-up">
                 <div class="mb-6">
                     <label for="email" class="text-white block mb-2 text-sm font-medium">E-mail</label>
                     <input type="email" id="email" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -64,9 +65,11 @@
                 <div class="mb-6">
                     <label for="message" class="text-white block mb-2 text-sm font-medium">Message</label>
                     <textarea id="Message" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="Let's talk about ..." name="Message"></textarea>
+                    placeholder="Let's talk about ..." name="message"></textarea>
                 </div>
-                <button class="z-1 w-[100%!important] px-6 md:px-7 py-3 rounded-full sm:w-max flex justify-center text-white bg-primary border-2 border-transparent">
+                <button
+                type="submit" 
+                class="z-1 w-[100%!important] px-6 md:px-7 py-3 rounded-full sm:w-max flex justify-center text-white bg-primary border-2 border-transparent">
                     Send Message
                 </button>
             </form>
@@ -78,5 +81,28 @@
     </section>
 </template>
 <script setup>
+import emailjs from '@emailjs/browser';
+import { ref } from 'vue';
+const form = ref(null);
+const successMessage = ref(false);
 
+const sendEmail = () => {
+    if(!form.value) return;
+        emailjs.sendForm('service_xeevn5d', 'template_t4d6j85', form.value, {
+        publicKey: 'zsL63t-k_iURPo_VM'
+    }).then(()=> {
+        successMessage.value = true;
+        console.log('SUCCESS')
+        resetForm();
+
+        setTimeout(() => {
+            successMessage.value = false;
+        }, 4000);
+    }).catch(error => {
+        console.log('Failed....', error.text)
+    });
+};
+const resetForm = () => {
+    form.value.reset();
+}
 </script>
