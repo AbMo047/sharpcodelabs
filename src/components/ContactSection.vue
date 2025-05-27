@@ -34,16 +34,22 @@
                         </div>
                     </div>
                     <div class="flex mb-10 items-center">
-                        <div class="p-2"
-                        style="background: #111a3e; width: 50px; height: 46px; display: flex;justify-content: center; border-radius: 50%;
-                        overflow: hidden;border: 1px solid #111a3e;backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);"
-                        >
-                            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="linkedin" class="w-6">
+                    <a 
+                        href="https://www.linkedin.com/in/youssefjhr/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="Visit Youssef's LinkedIn profile"
+                        title="LinkedIn – Youssef J"
+                        class="flex items-center gap-4"
+                    >
+                    <div style="background: #111a3e; width: 50px; height: 46px; display: flex; justify-content: center; align-items: center; border-radius: 50%; overflow: hidden; border: 1px solid #111a3e; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px);">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn icon" class="w-6 h-6" />
+                    </div>
+                        <div class="text-white">
+                                    <h4 class="text-sm font-semibold">LinkedIn</h4>
+                                <p class="text-xs">Youssef J</p>
                         </div>
-                        <div class="ml-5 text-white">
-                            <h4>LinkedIn </h4>
-                            <a href="https://www.linkedin.com/in/youssefjhr/">Youssef J</a>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
