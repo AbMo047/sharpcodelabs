@@ -16,11 +16,11 @@
                         <h4 class="font-semibold uppercase text-white">
                             {{ skill.name }}
                         </h4>
-                        <h3 class="text-2xl font-bold text-white">{{ skill.width }}</h3>
+                        <!-- <h3 class="text-2xl font-bold text-white">{{ skill.width }}</h3> -->
                     </div>
-                    <div class="mt-2 h-1 w-full bg-[#131d30] rounded-full">
+                    <!-- <div class="mt-2 h-1 w-full bg-[#131d30] rounded-full">
                         <div class="h-1 rounded-full bg-primary" :style="`width :${skill.width}`"></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div data-aos="flip-left">
@@ -50,23 +50,33 @@ import { ref } from 'vue'
 const Skills = ref([
   {
     id: 1,
-    name: 'Vue.js (with Tailwind & GraphQL)',
-    width: '85%' // Gebaseerd op meerdere projecten (Booking System, DAMS, IIIF)
+    name: 'Vue.js | Ember.js | Angular | React | React Native | JavaScript | TypeScript | Tailwind CSS | Bootstrap | HTML | CSS',
+    width: '85%'
   },
   {
     id: 2,
-    name: 'Node.js (incl. Keycloak, Docker)',
-    width: '80%' // Full-stack werk in Booking System & Government Portaal
+    name: 'Node.js | PHP | .NET | Java | Python',
+    width: '80%'
   },
   {
     id: 3,
-    name: 'JavaScript / TypeScript',
-    width: '75%' // Overkoepelend in vrijwel alle projecten
+    name: 'SQL | MongoDB | MySQL',
+    width: '75%'
   },
   {
     id: 4,
-    name: 'Cypress (E2E Testing)',
-    width: '65%' // Park & Seat Automation Project
+    name: 'Linux | Docker',
+    width: '65%'
+  },
+  {
+    id: 5,
+    name: 'Cypress',
+    width: '75%'
+  },
+  {
+    id: 6,
+    name: 'Wordpress',
+    width: '70%'
   }
 ]);
 
