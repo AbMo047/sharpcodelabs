@@ -3,7 +3,7 @@
         <div class="container p-12 flex justify-between">
             <div class="text-white text-3xl font-bold"><img src="../assets/image/logowhitetransparant.png" class="w-24" alt="Logo" />
             </div>
-            <p class="text-slate-600">All rights reserved.</p>
+            <p class="text-slate-600">{{ $t("footer.rights") }}</p>
         </div>
     </footer>
 </template>

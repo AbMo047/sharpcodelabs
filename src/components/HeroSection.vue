@@ -9,23 +9,20 @@
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left">
                         <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                            Hi, I'm <span class="text-transparant bg-clip-text bg-gradient-to-r from-primary to-pink-500">
+                            {{ $t('hello') }}<span class="text-transparant bg-clip-text bg-gradient-to-r from-primary to-pink-500">
                                 Youssef
                             </span>
                         </h1>
                     </div>
                     <description>
                     <p class="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
-                       My name is Youssef, I’m 26 years old and an IT developer with a deep passion for building things that actually work. 
-                       What started as curiosity for how digital systems operate quickly turned into a drive to create real solutions through clean, functional code. 
-                       I love the technical challenge — but even more, I love seeing an idea come to life and make an impact. 
-                       For me, every line of code is a step closer to a smoother, smarter, more efficient experience.
+                       {{ $t("intro.bio")  }}
                     </p>
                     </description>
                     <div class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
                         <button href="#contact" class="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
                             <span class="absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary border-2 border-transparent"></span>
-                            <span class="relative flex items-center justify-center text-white"><a href="#contact">Hire Me</a></span>
+                            <span class="relative flex items-center justify-center text-white"><a href="#contact"> {{ $t("hireMe") }}</a></span>
                         </button>
                         <button class="border border-primary px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
                             <div class="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">
@@ -41,7 +38,7 @@
                                     </svg>
                                     <div class="download-loader tesxt-white hidden"></div>
                                 </div>
-                                <a href="/sharpcodelabs/resume.pdf" download="Youssef_Resume.pdf" class="pl-2 text-primary">Download Resume</a>
+                                <a href="/sharpcodelabs/resume.pdf" download="Youssef_Resume.pdf" class="pl-2 text-primary"> {{ $t("downloadResume") }}</a>
                             </div>
                         </button>
                     </div>

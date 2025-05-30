@@ -1,6 +1,6 @@
 <template>
     <section class="text-white mt-20" id="testimonials" data-aos="zoom-in">
-        <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">Testimonials</h2>
+        <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">{{$t("testimonials")}}</h2>
         <div class="px-4 xl:px-16">
             <Carousel v-bind="settings" :breakpoints="breakpoints">
                 <Slide v-for="element in testimonials" :key="element.id">
@@ -15,7 +15,7 @@
                             <div class="w-full">
                                 <p class="text-sm leading-tight">
                                     <span class="text-lg leading-none italic font-bold text-white mr-1">"</span>
-                                    {{ element.comment }}
+                                    {{ t(element.comment) }}
                                     <span class="text-lg leading-none italic font-bold text-white mr-1">"</span>
 
                                 </p>
@@ -34,6 +34,8 @@
 <script setup>
 import { ref } from 'vue';
 import {Carousel, Navigation,Slide} from 'vue3-carousel';
+import { useI18n } from 'vue-i18n'
+const { locale, t } = useI18n()
 import 'vue3-carousel/dist/carousel.css';
 //Carousel Settings
 const settings = ref({
@@ -55,39 +57,39 @@ const breakpoints =ref({
 const testimonials = ref([
   {
     id: 1,
-    fullName: 'Mohamed El M..',
+    fullName: 'Mohamed El M.',
     image: "/sharpcodelabs/image/profilepic.jpg",
-    comment: "Youssef delivered exactly what I needed — a fast, responsive, and modern web app. Communication was smooth and the quality of code exceeded expectations!"
+    comment: "testimonial.1"
   },
   {
     id: 2,
     fullName: 'Jarno C.',
     image: "/sharpcodelabs/image/profilepic.jpg",
-    comment: "Super impressed with the way he handled our project. From planning to delivery, everything was on point. Highly recommended for any serious development work."
+    comment: "testimonial.2"
   },
   {
     id: 3,
     fullName: 'Ricardo A.',
     image: "/sharpcodelabs/image/profilepic.jpg",
-    comment: "Not only did he build a stunning mobile interface, but he also optimized the performance beyond what we expected. Our users love the new version!"
+    comment: "testimonial.3"
   },
   {
     id: 4,
     fullName: 'Omar Y.',
     image: "/sharpcodelabs/image/profilepic.jpg",
-    comment: "Reliable, fast, and very skilled. Youssef took care of both frontend and backend flawlessly. We’ll definitely work with him again."
+    comment: "testimonial.4"
   },
   {
     id: 5,
     fullName: 'Yassine Y.',
     image: "/sharpcodelabs/image/profilepic.jpg",
-    comment: "The automation testing setup he built saved us hours of manual QA. Clean structure, great documentation, and helpful support throughout."
+    comment: "testimonial.5"
   },
   {
     id: 6,
     fullName: 'Oussama E.',
     image: "/sharpcodelabs/image/profilepic.jpg",
-    comment: "From start to finish, it was a professional experience. His understanding of full-stack development is impressive and it shows in the final result."
+    comment: "testimonial.6"
   }
 ]);
 

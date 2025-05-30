@@ -2,11 +2,11 @@
     <section class="text-white mt-20" id="projects">
         <div class="px-4 xl:pl-16">
             <div class="mb-4 md:flex md:justify-between xl:pr-16">
-                <h2 class="text-4xl font-bold text-white">My Latest Projects</h2>
+                <h2 class="text-4xl font-bold text-white">{{$t("latestProjects")}}</h2>
                 <div class="flex space-x-4 mb-4 mt-5 md:mt-0">
-                    <button class="hover:text-primary" v-for="category in ['all', 'web development', 'Mobile App']"
+                    <button class="hover:text-primary" v-for="category in ['all', 'webDevelopment', 'mobileApp']"
                         :key="category" @click="() => selectedCategory = category">
-                        {{ category }}
+                        {{ t(category) }}
                     </button>
                 </div>
             </div>
@@ -44,13 +44,13 @@
                     </div>
                     </div>
                     <div class="text-white rounded-b-xl mt-3 bg-[#111a3e] shadow-lg border-[#1f1641] py-6 px-4">
-                        <h3 class="text-lg font-semibold uppercase lg:text-xl">{{ project.title }}</h3>
-                        <p class="text-[#ADB7BE]">{{ project.description }}</p>
+                        <h3 class="text-lg font-semibold uppercase lg:text-xl">{{ t(project.title) }}</h3>
+                        <p class="text-[#ADB7BE]">{{ t(project.description) }}</p>
                         <div class="flex flex-wrap p-2.5">
                             <div v-for="technology in project.technologies" :key="technology" class="text-center ml-1 mt-1 rounded-3x bg-[#111827]"
                             style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); border: 1px solid #111827; backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);"
                             >
-                        <p class="px-1 py-2">{{ technology }}</p>
+                        <p class="px-1 py-2">{{ t(technology) }}</p>
                         </div>
                         </div>
                     </div>
@@ -63,54 +63,55 @@
 <script setup>
 
 import { computed, ref } from 'vue';
-
+import { useI18n } from 'vue-i18n'
+const { locale, t } = useI18n()
 const Projects = ref([
   {
     id: 1,
-    category: 'Web Development',
+    category: 'webDevelopment',
     image: '/sharpcodelabs/image/project.png',
-    title: 'Booking Management System',
-    description: 'Developed a full-featured booking platform with secure login, admin dashboard, and real-time reservation flow for services like saunas and wedding decorators.',
+    title: 'bookingTitle',
+    description: 'bookingDescriptionLong',
     technologies: ['Vue.js', 'Node.js', 'MySQL', 'Keycloak', 'Docker']
   },
   {
     id: 2,
-    category: 'Web Development',
+    category: 'webDevelopment',
     image: '/sharpcodelabs/image/project.png',
     title: 'Digital Asset Management System (DAMS)',
-    description: 'Created a media asset platform using Vue.js and GraphQL, allowing enterprise users to upload, tag, and retrieve digital files quickly and efficiently.',
+    description: 'mediaDescription',
     technologies: ['Vue.js', 'GraphQL', 'Tailwind CSS']
   },
   {
     id: 3,
-    category: 'Government Platform',
+    category: 'webDevelopment',
     image: '/sharpcodelabs/image/project.png',
-    title: 'Agency for Home Affairs Portal',
-    description: 'Built a decentralized portal where municipalities can manage local data securely and autonomously, reducing administrative complexity and delay.',
+    title: 'agencyTitle',
+    description: 'agencyDescription',
     technologies: ['Ember.js', 'Node.js']
   },
   {
     id: 4,
-    category: 'Testing Automation',
+    category: 'mobileApp',
     image: '/sharpcodelabs/image/project2.png',
-    title: 'Park & Seat Test Automation',
-    description: 'Automated Cypress tests for seat selection to streamline releases, boost coverage, and ensure consistent, stable performance across updates.',
+    title: 'automationTitle',
+    description: 'automationDescription',
     technologies: ['Cypress', 'JavaScript']
   },
   {
     id: 5,
-    category: 'Prototype / Research',
+    category: 'webDevelopment',
     image: '/sharpcodelabs/image/project.png',
-    title: 'IIIF Annotation Tool (PoC)',
-    description: 'Built a research prototype using Vue.js and IIIF to enable users to annotate images interactively and tag specific regions within digital archives.',
+    title: 'iiifTitle',
+    description: 'iiifDescription',
     technologies: ['Vue.js', 'IIIF', 'JavaScript']
   },
   {
     id: 6,
-    category: 'Mobile App',
+    category: 'mobileApp',
     image: '/sharpcodelabs/image/project2.png',
-    title: 'Client Booking App',
-    description: 'Designed a mobile app for clients to browse, book, and manage appointments, with a smooth and intuitive interface for responsive on-the-go usage.',
+    title: 'clientAppTitle',
+    description: 'clientAppDescription',
     technologies: ['React Native', 'Express.js']
   }
 ]);
@@ -119,9 +120,10 @@ const Projects = ref([
 
 const selectedCategory = ref('all');
 const filteredProjects = computed(() => {
-    if (selectedCategory.value === 'all') {
-        return Projects.value
-    };
-    return Projects.value.filter(project => project.category.toLocaleLowerCase() === selectedCategory.value.toLocaleLowerCase());
+  if (selectedCategory.value === 'all') {
+    return Projects.value;
+  }
+  return Projects.value.filter(project => project.category === selectedCategory.value);
 });
+
 </script>

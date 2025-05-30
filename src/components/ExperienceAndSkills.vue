@@ -8,8 +8,8 @@
         </div>
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
             <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full w-[80%]">
-                <h2 class="text-4xl font-bold text-white text-left mb-4">My
-                    <span class="text-transparant bg-clip-text bg-gradient-to-r from-primary to-secondary">Skills</span>
+                <h2 class="text-4xl font-bold text-white text-left mb-4">
+                    <span class="text-transparant bg-clip-text bg-gradient-to-r from-primary to-secondary">{{ $t("skills.title") }}</span>
                 </h2>
                 <div class="mt-8" v-for="skill in Skills" :key="skill.id">
                     <div class="flex-items-end justify-between" data-aos="fade-right">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div data-aos="flip-left">
-                <h2 class="text-4xl font-bold text-white text-left mb-8 md:text-center md:mt-0 mt-8">My Experiences</h2>
+                <h2 class="text-4xl font-bold text-white text-left mb-8 md:text-center md:mt-0 mt-8">{{ $t("experiences.title") }}</h2>
                 <div class="space-y-8 py-8" data-aos="fade-left">
                     <div v-for="element in Experiences" :key="element.id"
                     class="flex items-center rounded-xl p-4 bg-[#111a3e] shadow-lg border-[#1f1641]">
@@ -35,8 +35,13 @@
                         <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                             {{ element.role }}
                         </h3>
-                        <p class="text-white">{{ element.company }}</p>
-                        <p class="text-white">{{ element.date }}</p>
+                        <p class="text-white">{{ t(element.company) }}</p>
+                        <p class="text-white">
+                            {{ element.date.includes('present') 
+                            ? element.date.replace('present', t('present')) 
+                            : element.date }}
+                        </p>
+
                     </div>
                     </div>
                 </div>
@@ -47,6 +52,8 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { locale, t } = useI18n()
 const Skills = ref([
   {
     id: 1,
@@ -85,8 +92,8 @@ const Experiences = ref([
   {
     id: 1,
     role: 'Full Stack Developer',
-    company: 'Self-employed – SharpCode Labs',
-    date: 'Nov 2024 – Present'
+    company: 'selfEmployed',
+    date:`Nov 2024 – present`
   },
   {
     id: 2,
