@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import router from './router'
 import './assets/index.css';
 import { createI18n } from 'vue-i18n'
 import EN from './locale/en.json';
@@ -29,5 +28,4 @@ const i18n = createI18n({
 
 
 app.use(i18n);
-app.use(router);
 app.mount('#app');
