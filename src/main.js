@@ -15,12 +15,15 @@ const savedLang = localStorage.getItem('lang') || 'en'
 const i18n = createI18n({
   locale: savedLang,
   fallbackLocale: 'en',
+  globalInjection: true,
+  legacy: false,
+  fallbackWarn: false,
+  missingWarn: false,
   messages: {
     en: EN,
     nl: NL,
     de: DE,
     fr: FR,
-
   }
 })
 

@@ -28,7 +28,8 @@
             class="block text-white transition hover:text-primary ease-linear text-2xl md:text-lg"
             @click="scrollToSection(item.href)"
           >
-            {{ t(item.name) }}
+            {{ t(item.name, item.name) }}
+
           </a>
         </li>
       </ul>

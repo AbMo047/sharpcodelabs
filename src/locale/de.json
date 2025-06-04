@@ -35,6 +35,14 @@
   "project": "Projekt",
   "yearsExperience": "Jahre Erfahrung",
   "skills.title": "Meine Fähigkeiten",
+  "skillsList": {
+    "frontend": "Vue.js, Ember.js, Angular, React, React Native, JavaScript, TypeScript, Tailwind CSS, Bootstrap, HTML, CSS",
+    "backend": "Node.js, PHP, .NET, Java, Python",
+    "databases": "SQL, MongoDB, MySQL",
+    "devops": "Linux, Docker",
+    "testing": "Cypress",
+    "cms": "Wordpress"
+  },
   "services.title": "Meine Leistungen",
   "experiences.title": "Meine Erfahrungen",
   "selfEmployed": "Selbstständig",

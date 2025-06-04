@@ -21,23 +21,40 @@
   "portalsDescription": "Smart client portals and internal tools that save you time and simplify your workflow.",
   "startups": "Startups",
   "mvpDescription": "I help you launch fast with reliable MVPs - built to validate, iterate and scale with confidence.",
-
+  "education": "My Education",
   "school": "AP University of Applied Sciences Antwerp",
   "program": {
     "graduate": "Graduate Programming",
     "electronics": "Electronics & ICT"
-  }, 
+  },
   "more": "More",
   "more.about": "About",
   "me": "Me",
-  "aboutDescription": "Creative problem-solver. Clean code enthusiast. I'm Youssef, a developer driven by challenge and simplicity.",
+  "aboutDescription": "Creative problem-solver. Clean code enthusiast...",
   "happyClient": "Happy Client",
   "project": "Project",
   "yearsExperience": "Years Experience",
   "skills.title": "My Skills",
+  "skillsList": {
+    "frontend": "Vue.js, Ember.js, Angular, React, React Native, JavaScript, TypeScript, Tailwind CSS, Bootstrap, HTML, CSS",
+    "backend": "Node.js, PHP, .NET, Java, Python",
+    "databases": "SQL, MongoDB, MySQL",
+    "devops": "Linux, Docker",
+    "testing": "Cypress",
+    "cms": "Wordpress"
+  },
   "services.title": "My Services",
   "experiences.title": "My Experiences",
-  "selfEmployed": "Self-Employed",
+  "companies": {
+    "selfEmployed": "Self-Employed",
+    "inuits": "Inuits, Antwerp",
+    "beego": "Beego, Antwerp"
+  },
+  "dates": {
+    "nov2024Present": "Nov 2024 – Present",
+    "feb2023Sep2024": "Feb 2023 – Sep 2024",
+    "mar2021Mar2022": "Mar 2021 – Mar 2022"
+  },
   "present": "Present",
   "latestProjects": "My Latest Projects",
   "all": "All",
@@ -47,7 +64,7 @@
   "bookingDescriptionLong": "Developed a full-featured booking platform with secure login, admin dashboard, and real-time reservation flow for services like saunas and wedding decorators.",
   "mediaDescription": "Created a media asset platform using Vue.js and GraphQL, allowing enterprise users to upload, tag, and retrieve digital files quickly and efficiently.",
   "agencyTitle": "Agency for Home Affairs Portal",
-  "agencyDescription": "Built a decentralized portal where municipalities can manage local data securely and autonomously, reducing administrative complexity and delays.",
+  "agencyDescription": "Built a decentralized portal where municipalities can manage local data securely and autonomously, reducing administrative complexity and delay.",
   "automationTitle": "Park & Seat Test Automation",
   "automationDescription": "Automated Cypress tests for seat selection to streamline releases, boost coverage, and ensure consistent, stable performance across updates.",
   "iiifTitle": "IIIF Annotation Tool (PoC)",
@@ -55,7 +72,7 @@
   "clientAppTitle": "Client Booking App",
   "clientAppDescription": "Designed a mobile app for clients to browse, book, and manage appointments, with a smooth and intuitive interface for responsive on-the-go usage.",
   "letsConnect": "Let's Connect",
-  "contactDescription": "Whether you have a project in mind, a question about my work, or just want to say hello — I'm always open to connecting. I specialize in building scalable, modern web and mobile applications with a strong focus on performance and user experience.",
+  "contactDescription": "Whether you have a project in mind, a question about my work, or just want to say hello — I'm always open to connecting. I specialize in building scalable, modern web and mobile applications with a strong focus on performance and user experience. Let's build something great together.",
   "form": {
     "email": "Email",
     "phone": "Phone",
@@ -69,11 +86,11 @@
     "rights": "All rights reserved."
   },
   "testimonial": {
-    "1": "Youssef delivered exactly what I needed — a fast, responsive, and modern web app. Communication was smooth and the quality of code exceeded expectations!",
-    "2": "We were highly impressed with how he handled our project. From planning to delivery, everything was perfectly on point. Highly recommended for any serious development work.",
-    "3": "He not only built a stunning mobile interface but also optimized the performance beyond what we expected. Our users love the new version.",
-    "4": "Reliable, fast, and very skilled. Youssef handled both frontend and backend flawlessly. We will definitely work with him again.",
-    "5": "The automated testing setup he built saved us countless hours of manual QA. Clean structure, excellent documentation, and consistently helpful support.",
-    "6": "From start to finish, it was a professional collaboration. His full-stack development expertise is impressive and clearly reflected in the final result."
+    "1": "Youssef delivered exactly what I needed — a fast, responsive, and modern web app. Communication was smooth and the quality of code exceeded expectations! ",
+    "2": "Super impressed with the way he handled our project. From planning to delivery, everything was on point. Highly recommended for any serious development work.",
+    "3": "Not only did he build a stunning mobile interface, but he also optimized the performance beyond what we expected. Our users love the new version",
+    "4": "Reliable, fast, and very skilled. Youssef took care of both frontend and backend flawlessly. We’ll definitely work with him again",
+    "5": "The automation testing setup he built saved us hours of manual QA. Clean structure, great documentation, and helpful support throughout",
+    "6": "From start to finish, it was a professional experience. His understanding of full-stack development is impressive and it shows in the final result"
   }
 }
