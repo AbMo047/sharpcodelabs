@@ -1,7 +1,7 @@
 <template>
     <section class="text-[#1e293b] mt-20" id="services">
         <div class="px-4 xl:pl-16">
-            <h2 class="text-4xl font-bold text-[#1e293b] mb-4">{{ $t("services.title") }}</h2>
+            <h2 class="text-4xl font-bold text-[#5a422e] mb-4">{{ $t("services.title") }}</h2>
         </div>
         <div class="py-8 px-4 sm:py-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
             <div 
