@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav
       :class="[
-        'fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] md:relative md:bg-transparent md:flex md:justify-between md:flex-row pb-9',
+        'fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#fff8ed] md:relative md:bg-transparent md:flex md:justify-between md:flex-row pb-9',
         isMenuOpen ? 'block' : 'hidden'
       ]"
     >
@@ -25,7 +25,7 @@
         <li v-for="item in menu" :key="item.href">
           <a
             :href="item.href"
-            class="block text-white transition hover:text-primary ease-linear text-2xl md:text-lg"
+            class="block text-[#5a422e] transition hover:text-[#b98e4d] ease-linear text-2xl md:text-lg"
             @click="scrollToSection(item.href)"
           >
             {{ t(item.name, item.name) }}
@@ -38,7 +38,7 @@
       <div class="relative mt-5 md:mt-0 md:ml-5 text-sm">
         <button
           @click="dropdownOpen = !dropdownOpen"
-          class="flex items-center gap-2 text-white border px-3 py-1 rounded"
+          class="flex items-center gap-2 text-[#5a422e] border px-3 py-1 rounded"
         >
           <img :src="activeLang.flag" alt="flag" class="w-5 h-3" />
           <span>{{ activeLang.label }}</span>
@@ -49,17 +49,17 @@
 
         <div
           v-if="dropdownOpen"
-          class="absolute right-0 mt-2 bg-white rounded shadow-lg z-50"
+          class="absolute right-0 mt-2 bg-[#fff8ed] rounded shadow-lg z-50"
         >
           <ul>
             <li
               v-for="lang in languages"
               :key="lang.code"
               @click="selectLang(lang.code)"
-              class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              class="flex items-center gap-2 px-4 py-2 hover:bg-[#f7ecdb] cursor-pointer"
             >
               <img :src="lang.flag" class="w-5 h-3" />
-              <span class="text-gray-800">{{ lang.label }}</span>
+              <span class="text-[#5a422e]">{{ lang.label }}</span>
             </li>
           </ul>
         </div>

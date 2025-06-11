@@ -1,9 +1,10 @@
 <template>
-    <footer class="mt-8 border z-10 border-t-[#33353F] border-1-transparant text-white">
-        <div class="container p-12 flex justify-between">
-            <div class="text-white text-3xl font-bold"><img src="../assets/image/logowhitetransparant.png" class="w-24" alt="Logo" />
-            </div>
-            <p class="text-slate-600">{{ $t("footer.rights") }}</p>
-        </div>
-    </footer>
+  <footer class="mt-8 border-t border-[#ecdcc3] bg-[#fdf7ef] text-[#5a422e] z-10">
+    <div class="container mx-auto p-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-3xl font-bold">
+        <img src="../assets/image/logowhitetransparant.png" class="w-24" alt="Logo" />
+      </div>
+      <p class="text-sm text-[#886f4a]">{{ $t("footer.rights") }}</p>
+    </div>
+  </footer>
 </template>
