@@ -35,35 +35,37 @@
       </ul>
 
       <!-- Dropdown taalwissel -->
-      <div class="relative mt-5 md:mt-0 md:ml-5 text-sm">
-        <button
-          @click="dropdownOpen = !dropdownOpen"
-          class="flex items-center gap-2 text-[#5a422e] border px-3 py-1 rounded"
-        >
-          <img :src="activeLang.flag" alt="flag" class="w-5 h-3" />
-          <span>{{ activeLang.label }}</span>
-          <svg class="w-3 h-3 ml-1" fill="white" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 011.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-          </svg>
-        </button>
+      <div class="relative mt-5 md:mt-0 md:ml-5 text-sm font-medium">
+  <!-- Trigger Button -->
+  <button
+    @click="dropdownOpen = !dropdownOpen"
+    class="flex items-center gap-2 text-[#5a422e] border border-[#dbb960] bg-white px-3 py-1.5 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
+  >
+    <img :src="activeLang.flag" alt="flag" class="w-5 h-3 rounded-sm" />
+    <svg class="w-3 h-3 ml-1" fill="#5a422e" viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 011.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+    </svg>
+  </button>
 
-        <div
-          v-if="dropdownOpen"
-          class="absolute right-0 mt-2 bg-[#fff8ed] rounded shadow-lg z-50"
-        >
-          <ul>
-            <li
-              v-for="lang in languages"
-              :key="lang.code"
-              @click="selectLang(lang.code)"
-              class="flex items-center gap-2 px-4 py-2 hover:bg-[#f7ecdb] cursor-pointer"
-            >
-              <img :src="lang.flag" class="w-5 h-3" />
-              <span class="text-[#5a422e]">{{ lang.label }}</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <!-- Dropdown List -->
+  <div
+    v-if="dropdownOpen"
+    class="absolute right-0 mt-2 w-40 bg-white border border-[#ecdcc3] rounded-xl shadow-xl z-50 transition-all duration-300"
+  >
+    <ul class="py-1">
+      <li
+        v-for="lang in languages"
+        :key="lang.code"
+        @click="selectLang(lang.code)"
+        class="flex items-center gap-3 px-4 py-2 hover:bg-[#fff4e1] transition-all cursor-pointer"
+      >
+        <img :src="lang.flag" class="w-5 h-3 rounded-sm shadow-sm" />
+        <span class="text-[#5a422e]">{{ lang.label }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
     </nav>
   </header>
 </template>
