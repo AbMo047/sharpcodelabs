@@ -2,9 +2,9 @@
   <button
     v-if="isVisible"
     @click="scrollToTop"
-    class="fixed bottom-4 right-4 bg-gradient-to-r from-primary to-[#f88fc2] text-[#5a422e] 
-    rounded-full w-12 h-12 flex items-center justify-center text-xl cursor-pointer 
-    transition-opacity duration-300 hover:opacity-80"
+    class="fixed bottom-5 right-5 bg-gradient-to-br from-[#dbb960] to-[#b98e4d] text-white 
+    shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 ease-in-out 
+    rounded-full w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
     aria-label="Scroll to top"
   >
     ↑
