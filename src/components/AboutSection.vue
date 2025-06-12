@@ -66,8 +66,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
 
 const education = ref([
   { id: 1, School: 'school', program: 'program.graduate', year: '2021 – 2023' },

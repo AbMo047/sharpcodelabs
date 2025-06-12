@@ -34,7 +34,7 @@ const TestimonialsSection = defineAsyncComponent(()=>import('@/components/Testim
 const ExperienceAndSkills = defineAsyncComponent(()=>import('@/components/ExperienceAndSkills.vue'));
 const LatestProjSection = defineAsyncComponent(()=>import('@/components/LatestProjSection.vue'));
 const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'));
-const Footer = defineAsyncComponent(()=>import('@/components/Footer.vue'));
+const Footer = defineAsyncComponent(()=>import('@/components/BaseFooter.vue'));
 const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'));
 </script>
 
