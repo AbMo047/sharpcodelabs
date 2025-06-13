@@ -19,7 +19,7 @@
                     <h3 class="pt-8 text-lg font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#b98e4d] to-[#f8c87a] lg:text=xl">
                         {{ $t(service.name) }}
                     </h3>
-                    <p class="text-[#777777] pt-4 text-sm group-hover:text-[#5a422e] md:text-base">
+                    <p class="text-[#5a422e] pt-4 text-sm group-hover:text-[#5a422e] md:text-base">
                         {{ $t(service.description) }}
                     </p>
                 </div>

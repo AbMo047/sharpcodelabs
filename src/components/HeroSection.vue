@@ -15,7 +15,7 @@
                         </h1>
                     </div>
                     <description>
-                    <p class="text-[#949494] pt-8 text-center lg:text-left mx-auto max-w-xl">
+                    <p class="text-[#5a422e] pt-8 text-center lg:text-left mx-auto max-w-xl">
                        {{ $t("intro.bio")  }}
                     </p>
                     </description>

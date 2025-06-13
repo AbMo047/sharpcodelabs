@@ -24,8 +24,8 @@
               <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#b98e4d] to-[#f8c87a] lg:text-xl">
                 {{ $t(element.School, element.School) }}
               </h3>
-              <p class="text-[#777777]">{{ $t(element.program, element.program) }}</p>
-              <p class="text-[#777777]">{{ element.year }}</p>
+              <p class="text-[#5a422e]">{{ $t(element.program, element.program) }}</p>
+              <p class="text-[#5a422e]">{{ element.year }}</p>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
           {{ $t("me") }}
         </h2>
 
-        <p class="text-base lg:text-lg mt-8 py-8 text-[#777777]">
+        <p class="text-base lg:text-lg mt-8 py-8 text-[#5a422e]">
           {{ $t("aboutDescription") }}
         </p>
 
