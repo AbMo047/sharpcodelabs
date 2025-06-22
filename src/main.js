@@ -1,19 +1,19 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import './assets/index.css';
-import { createI18n } from 'vue-i18n'
-import EN from './locale/en.json';
-import NL from './locale/nl.json';
-import DE from './locale/de.json';
-import FR from './locale/fr.json';
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import "./assets/index.css";
+import { createI18n } from "vue-i18n";
+import EN from "./locale/en.json";
+import NL from "./locale/nl.json";
+import DE from "./locale/de.json";
+import FR from "./locale/fr.json";
 
 const app = createApp(App);
-const savedLang = localStorage.getItem('lang') || 'en'
+const savedLang = localStorage.getItem("lang") || "en";
 
 const i18n = createI18n({
   locale: savedLang,
-  fallbackLocale: 'en',
+  fallbackLocale: "en",
   globalInjection: true,
   legacy: false,
   fallbackWarn: false,
@@ -23,9 +23,8 @@ const i18n = createI18n({
     nl: NL,
     de: DE,
     fr: FR,
-  }
-})
-
+  },
+});
 
 app.use(i18n);
-app.mount('#app');
+app.mount("#app");

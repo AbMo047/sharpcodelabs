@@ -4,7 +4,10 @@
       {{ $t("letsConnect") }}
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8" data-aos="zoom-in-up">
+    <div
+      class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8"
+      data-aos="zoom-in-up"
+    >
       <!-- Contactgegevens -->
       <div>
         <p class="text-[#886f4a]">
@@ -14,8 +17,14 @@
         <div class="mt-5 space-y-10">
           <!-- Email -->
           <div class="flex items-center">
-            <div class="p-2 bg-[#fdf7ef] border border-[#ecdcc3] rounded-full flex justify-center items-center w-12 h-12">
-              <img src="https://img.icons8.com/metro/50/5a422e/new-post.png" alt="email icon" class="w-5" />
+            <div
+              class="p-2 bg-[#fdf7ef] border border-[#ecdcc3] rounded-full flex justify-center items-center w-12 h-12"
+            >
+              <img
+                src="https://img.icons8.com/metro/50/5a422e/new-post.png"
+                alt="email icon"
+                class="w-5"
+              />
             </div>
             <div class="ml-5">
               <h4 class="text-sm font-semibold">{{ $t("form.email") }}</h4>
@@ -25,19 +34,37 @@
 
           <!-- Phone -->
           <div class="flex items-center">
-            <div class="p-2 bg-[#fdf7ef] border border-[#ecdcc3] rounded-full flex justify-center items-center w-12 h-12">
-              <img src="https://img.icons8.com/ios-filled/50/5a422e/phone.png" alt="phone icon" class="w-5" />
+            <div
+              class="p-2 bg-[#fdf7ef] border border-[#ecdcc3] rounded-full flex justify-center items-center w-12 h-12"
+            >
+              <img
+                src="https://img.icons8.com/ios-filled/50/5a422e/phone.png"
+                alt="phone icon"
+                class="w-5"
+              />
             </div>
             <div class="ml-5">
               <h4 class="text-sm font-semibold">{{ $t("form.phone") }}</h4>
-              <p class="text-sm"><a href="tel:+32470845712">+324 70 84 57 12</a></p>
+              <p class="text-sm">
+                <a href="tel:+32470845712">+324 70 84 57 12</a>
+              </p>
             </div>
           </div>
 
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/youssefjhr/" target="_blank" class="flex items-center gap-4">
-            <div class="p-2 bg-[#fdf7ef] border border-[#ecdcc3] rounded-full flex justify-center items-center w-12 h-12">
-              <img src="https://img.icons8.com/ios-filled/50/5a422e/linkedin.png" alt="LinkedIn icon" class="w-5 h-5" />
+          <a
+            href="https://www.linkedin.com/in/youssefjhr/"
+            target="_blank"
+            class="flex items-center gap-4"
+          >
+            <div
+              class="p-2 bg-[#fdf7ef] border border-[#ecdcc3] rounded-full flex justify-center items-center w-12 h-12"
+            >
+              <img
+                src="https://img.icons8.com/ios-filled/50/5a422e/linkedin.png"
+                alt="LinkedIn icon"
+                class="w-5 h-5"
+              />
             </div>
             <div>
               <h4 class="text-sm font-semibold">{{ $t("form.linkedin") }}</h4>
@@ -48,13 +75,24 @@
       </div>
 
       <!-- Formulier -->
-      <div class="bg-[#fdf7ef] border border-[#ecdcc3] rounded-2xl p-6 shadow-md">
-        <div v-if="successMessage" class="mb-4 bg-green-100 text-[#5a422e] px-4 py-2 rounded text-sm">
+      <div
+        class="bg-[#fdf7ef] border border-[#ecdcc3] rounded-2xl p-6 shadow-md"
+      >
+        <div
+          v-if="successMessage"
+          class="mb-4 bg-green-100 text-[#5a422e] px-4 py-2 rounded text-sm"
+        >
           Message sent successfully
         </div>
-        <form ref="form" @submit.prevent="sendEmail" class="flex flex-col gap-4">
+        <form
+          ref="form"
+          @submit.prevent="sendEmail"
+          class="flex flex-col gap-4"
+        >
           <div>
-            <label for="email" class="block mb-1 text-sm font-medium">{{ $t("form.email") }}</label>
+            <label for="email" class="block mb-1 text-sm font-medium">{{
+              $t("form.email")
+            }}</label>
             <input
               type="email"
               id="email"
@@ -65,7 +103,9 @@
           </div>
 
           <div>
-            <label for="subject" class="block mb-1 text-sm font-medium">{{ $t("form.subject") }}</label>
+            <label for="subject" class="block mb-1 text-sm font-medium">{{
+              $t("form.subject")
+            }}</label>
             <input
               type="text"
               id="subject"
@@ -76,7 +116,9 @@
           </div>
 
           <div>
-            <label for="message" class="block mb-1 text-sm font-medium">{{ $t("form.message") }}</label>
+            <label for="message" class="block mb-1 text-sm font-medium">{{
+              $t("form.message")
+            }}</label>
             <textarea
               id="message"
               name="message"
@@ -97,14 +139,16 @@
       </div>
     </div>
 
-    <div class="bg-gradient-to-tr opacity-25 from-[#570cac] to-[#ecdcc3] blur-2xl h-20 w-80 z-0 absolute -top-1/2 -left-4 transform -translate-x-2/3 -translate-1/2"></div>
+    <div
+      class="bg-gradient-to-tr opacity-25 from-[#570cac] to-[#ecdcc3] blur-2xl h-20 w-80 z-0 absolute -top-1/2 -left-4 transform -translate-x-2/3 -translate-1/2"
+    ></div>
   </section>
 </template>
 
 <script setup>
-import emailjs from '@emailjs/browser';
-import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
+import emailjs from "@emailjs/browser";
+import { ref } from "vue";
+import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 
 const form = ref(null);
@@ -114,8 +158,8 @@ const sendEmail = () => {
   if (!form.value) return;
 
   emailjs
-    .sendForm('service_xeevn5d', 'template_t4d6j85', form.value, {
-      publicKey: 'zsL63t-k_iURPo_VM',
+    .sendForm("service_xeevn5d", "template_t4d6j85", form.value, {
+      publicKey: "zsL63t-k_iURPo_VM",
     })
     .then(() => {
       successMessage.value = true;
@@ -125,7 +169,7 @@ const sendEmail = () => {
       }, 4000);
     })
     .catch((error) => {
-      console.error('Failed to send message:', error.text);
+      console.error("Failed to send message:", error.text);
     });
 };
 
