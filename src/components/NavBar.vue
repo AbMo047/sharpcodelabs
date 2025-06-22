@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between p-3 items-center bg-opacity-50 relative z-20">
+  <header class="flex justify-between px-3 items-center bg-opacity-50 relative z-20">
     <img src="../assets/image/logowhitetransparant.png" class="w-42" alt="Logo" />
 
     <!-- Mobile toggle -->
