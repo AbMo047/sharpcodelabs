@@ -11,3 +11,9 @@
       --color-surface-dark: #111a3e;
       --color-gold: #facc15;
 }
+
+body,
+html {
+      margin: 0;
+      padding: 0;   
+}
