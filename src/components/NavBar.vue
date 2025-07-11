@@ -96,7 +96,7 @@
 
     <!-- ✅ MAIN H1 (SEO-critical) -->
     <h1 class="text-3xl md:text-4xl font-bold text-center text-[#5a422e] mt-10 mb-6">
-      Welcome to SharpCodeLabs – Scalable Web Apps. Real Results.
+      {{ $t("welcomeHeadline")}}
     </h1>
   </div>
 </template>
